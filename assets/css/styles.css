@@ -1,0 +1,670 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================== Common ================ */
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ================Header========== */
+.header {
+    height: 100vh;
+    background: #e6f0ff;
+    position: relative;
+}
+
+/* =============== Navbar ======================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar > ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
+.navbar ul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #4f5361;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .action-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+/*  Hero */
+.hero {
+    margin-top: 130px;
+}
+
+.hero .info {
+    width: 51%;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.hero .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.hero .hero-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.hero .hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc(((100vw - 1100px) / 2) - 100px);
+}
+
+/* ============ Clients ========= */
+
+.clients {
+    margin-top: 79px;
+    padding: 19px 0 41px;
+}
+
+.clients .row {
+    display: flex;
+}
+
+.clients .row {
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.clients .desc {
+    color: #7d8589;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.clients .row-desc {
+    margin-top: 23px;
+}
+
+.clients .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+
+/* ============ Guides ========= */
+
+.guides {
+    margin-top: 40px;
+    padding: 79px 0 79px;
+}
+
+.guides .sub-title {
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.guides .sub-title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guides .desc {
+    color: #5a6473;
+    width: 459px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.guides .guide-list {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+}
+
+.guides .guide-list .list-item {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.list-item .title {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.list-item .link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689ff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.list-item .vector {
+    margin-left: 6px;
+}
+
+.guide-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.guide-cta .btn {
+    min-width: 170px;
+}
+
+/* ============ Featured ========= */
+
+.featured {
+    margin-top: 41px;
+    padding: 110px 0;
+    background: #f5fafe;
+}
+
+.featured .sub-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.featured .desc {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.featured .link {
+    display: flex;
+    align-items: center;
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.featured .vector {
+    margin-left: 8px;
+}
+
+.featured .list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.featured .item {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.featured .list .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.featured .body {
+    padding: 17px 10px 24px;
+}
+
+.featured .item .title a {
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.featured .item .desc {
+    color: #a3a6ab;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 11px;
+    word-break: break-all;
+}
+
+.featured .item .info {
+    display: flex;
+    margin-top: 21px;
+    align-items: center;
+}
+
+.featured .item .info .label {
+    margin-left: 8px;
+    color: #4d4d52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+}
+
+.featured .item .info .icon:first-child {
+    margin-left: 0;
+}
+
+.featured .item .info .icon {
+    margin-left: 22px;
+}
+
+/* ============ Stats ========= */
+
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.stats .content {
+    width: 1048px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+
+.stats .img-block {
+    position: relative;
+}
+
+.stats .img-block .image {
+    width: 436.578px;
+    display: block;
+    margin-left: auto;
+    /* 2 đoạn trên giúp cho cái hình nhảy qua bên phải */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stats .stat-trend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 45px 22px 40px;
+    width: 260.855px;
+    border-radius: 0px 0px 12px 12px;
+    background: #fff;
+}
+
+.stat-trend .value {
+    color: #000339;
+    font-size: 2.6;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.stat-trend .icon {
+    margin-left: auto;
+}
+
+.stat-trend .desc {
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.stat-trend .separate {
+    margin-top: 27px;
+    background: #e9e9e9;
+    height: 1.286px;
+}
+
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+
+.stats .info .sub-title {
+    position: relative;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29;
+    width: 293.599px;
+}
+
+.stats .info .sub-title::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 44.749px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.stats .info .desc {
+    width: 337.257px;
+    margin-top: 21px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.stats .avatar-block {
+    margin-top: 27px;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.stats .avatar-group {
+    display: flex;
+}
+
+.stats .avatar-group .avatar {
+    width: 17.831px;
+    height: 17.505px;
+    margin-left: -3px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--bg-color, #fff);
+    font-weight: 450;
+    font-size: 0.7rem;
+    line-height: 16px;
+    text-align: center;
+    /* hai dòng trên dùng để căn giữa */
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.stats .avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+.stats .row-qty {
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.stats .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stats .qty-desc {
+    margin-top: 24px;
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* ============ Subscription ========= */
+
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+
+.subscription .info {
+    width: 671px;
+    padding: 0 80px;
+}
+
+.subscription .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.subscription .desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.subscription .btn {
+    margin-top: 20px;
+    min-width: 151px;
+    background: #fff;
+    color: #002366;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+
+/* ============ Footer ========= */
+
+.footer {
+    margin-top: 50px;
+    padding: 50px 0 58px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row1 {
+    gap: 185px;
+}
+
+.footer .row1 .heading {
+    color: #1c1c1d;
+    font-family: Lato, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer .list,
+.desc {
+    margin-top: 42px;
+}
+
+.footer .item {
+    margin-top: 18px;
+}
+
+.footer .item a,
+.footer .desc {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    white-space: nowrap;
+    /* dòng trên giúp chữ không bị xuống hàng */
+}
+
+.footer .desc {
+    white-space: normal;
+    line-height: 1.75;
+}
+
+.footer .social {
+    display: flex;
+    margin-top: 40px;
+    width: 117px;
+    height: 28.471px;
+    border-radius: 3px;
+}
+
+.footer .row2 {
+    margin-top: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .copyright {
+    color: #c2c2c2;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/*
+============ Ghi chú cho phần CSS ==============
+    Header:
+        - Đầu tiên để box-sizing là border-box để kích thước khai báo là kích thước tổng
+        - Cái chỗ font-size của html để là 62.5%, nhớ mẹ đi, muốn hiểu mở lại video cũ coi
+        - Font-size của body thì để 1.6rem thì sẽ là 16px nhờ cái ở trên
+        - Lớp content xuất hiện nhiều lần và có kich thước giống nhau nên bỏ vào phần dùng chung
+        - Để tất cả thẻ con của thằng navbar nằm ngang thì vô nó chỉnh lại display: flex, áp dụng tương tự với mấy thẻ li của 
+        - Để mấy cái sign in sign out dính sát vô bên phải thì chỉ cần để margin-left là auto, muốn về bên nào thì để bên ngược lại auto là được
+        - Để mấy cái thằng con của navbar nằm ngang nhau, tức là ở giữa chiều cao của thẻ thì để aling-items của nó là center
+        - Hầu hết các thẻ a đều không có gạch chân nên đưa phần đó vào common
+        - Thằng a đầu tiên có padding-left là 14px rồi nên chỉ cần thêm margin-left vào thằng ul để nó cách thằng trước nó ra thêm 50px là đủ
+        - Đối với cái khoảng cách với khúc ở trên thì nếu dùng margin-top sẽ bị margin-collapse nên ta dùng padding-top
+        - đổi width thành min-width của cái nút sign up
+        - cái btn chung để chiều cao là 50 vì chỉ có 1 vài nút khác 50 thôi
+        - padding trái phải của nút btn để đề phòng số lượng chữ nó vượt qua cái min-width
+        - khi chiều ngang của trang web nhỏ hơn 1100px thì nội dung trang sẽ bị mất và xuất hiện thanh cuộn, để giải quyết ta phải để max-width là 100% và để cho mỗi lề trái phải dư 24px thì ta để 100% - 48px
+        - #0f1b4c đây là màu chủ đạo của trang nên ta phải đặt biến
+        - Vì cái font việt hóa mà ta tải nó bị dày hơn một xíu nên phải giảm font-size xuống 1 ít cho nó xuống dòng giống trang web mẫu
+        - Để đưa hình cái lâu đài về bên góc dưới bên phải của web ta để cái header có pos là relative rồi để cái ảnh là absolute rồi chỉnh lại số liệu 
+        - Vì khi phóng to thu nhỏ trang, khoảng cách giữa tấm hình và lề phải phải được thay đổi theo nên ta không thể để nó nguyên là 65px được mà phải tính toán tùm lum
+    
+    Clients: 
+        - Để mấy cái đó nằm ngang được thì cho display của thẻ cha là flex rồi để justify-content là space-between để cho hai thằng cách ra hai bên, dùng cách này vì bên trong thẻ clients hai thằng con đều cách nhau giống vậy
+    
+    Guides:
+        - Cái đường gạch trên chữ How its works? là dùng cái before của thẻ h2 rồi chỉnh inline-block cho nó hiển thị được
+        - Để nó lên cao và nhảy ra giữa thì cho thằng cha h2 của nó positon là relative còn nó thì absolute rồi căn từ từ thôi
+        - Cái left: 50% là nó ra 50% của cái thẻ
+        - Để không bị xuất hiện thanh cuộn thì để max-width là 100%
+        - Căn giữa cái desc thì chỉ cần chỉnh cái margin: auto thôi tại nó là thẻ p
+        - Căn giữa mấy cái list-item thì sài text-align: center;
+        - Vì cái link là thẻ a nên margin-top sẽ ko hoạt động nên phải chỉnh lại display
+
+    Featured:
+        - Để cho cái mũi tên nằm giữa chữ View All Properties thì ta cho cái thằng cha của hai thằng đó có display:flex rồi để align-items: center
+        - Chỗ 3 cái hình thumbnail để cái flex của tụi nó là 1 để chia mỗi thằng 1 phần bằng nhau
+        - Chỗ thằng list để gap là 30px để cách nhau 30px
+        - object-fit: cover; giữ đúng tỉ lệ ảnh mà vẫn lấp đầy khung hinh, dùng khi kích thước ảnh quá khác với ta định dạng
+        - Vì chỉ có hai góc trái phải phía trên của hình được border-radius thôi nên ta làm theo vậy
+        - Có 2 lưu ý là khi người dùng thêm tên sản phẩm và phần ghi chú vào dưới các ảnh thumbnail thì có thể quá dài và mất tính thẩm mỹ nên ta phải giới hạn số dòng lại và thêm dấu 3 chấm khi đến giới hạn cho phép, xem phần xử lý ở cái line-clamp của phần common
+        - Phần mô tả sản phẩm có thể bị người dùng dán hẳn một đường link vào, khi đó có thể gây vỡ giao diện vì nó không thể xuống dòng vì không có dấu cách nào nên phải thêm word-break: break-all; vào cái desc
+       */
